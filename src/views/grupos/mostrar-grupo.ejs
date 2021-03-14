@@ -1,0 +1,34 @@
+<div class="contenedor">
+    <h1><%= nombrePagina %></h1>
+    <div class="informacion-usuario">
+        <div class="imagen">
+            <% if (grupo.imagen) { %>
+                <img src="/uploads/grupos/<%= grupo.imagen %>" alt="">
+            <% } else { %>
+                <img src="/img/logo.png" alt="">
+            <% } %> 
+        </div>
+        <div class="texto">
+            <%- grupo.descripcion %> 
+            <% if (grupo.url) { %> 
+                <a target="_blank" class="url" href="<%= grupo.url %>">Visita nuestro sitio web</a>
+            <% } %> 
+        </div>
+    </div>
+    <h2>Meeti's</h2>
+    <div>
+        <ul class="lista-grupos">
+            <% meetis.forEach(meeti => { %>
+                <li>
+                    <div class="texto">
+                        <a href="/meeti/<%= meeti.slug %>">
+                            <h3><%= meeti.titulo %></h3>
+                            <p class="fecha"><%= meeti.fecha %></p> 
+                        </a>
+                        
+                    </div>
+                </li>
+            <% }) %> 
+        </ul>
+    </div>
+</div>

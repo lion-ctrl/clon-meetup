@@ -1,0 +1,12 @@
+<nav class="nav">
+    <% if (user.id) { %>
+        <a href="/administracion">Administracion</a>
+        <a href="/nuevo-grupo">Nuevo Grupo</a>
+        <a href="/nuevo-meeti">Nuevo Meeti</a>
+        <a href="/cerrar-sesion">Cerrar Sesion</a>
+    <% } else { %>
+        <a href="/nuevo-grupo">Nuevo Grupo</a>
+        <a href="/iniciar-sesion">Iniciar Sesión</a>
+        <a href="/crear-cuenta">Registrarse</a>
+    <% } %> 
+</nav>

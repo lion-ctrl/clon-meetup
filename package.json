@@ -1,0 +1,40 @@
+{
+  "name": "meeti",
+  "version": "1.0.0",
+  "description": "Proyecto Meeti con NodeJS, PostgreSQL y EJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src --ignore ./src/public",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Leonardo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "leaflet-geosearch": "^3.2.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "sequelize": "^6.4.0",
+    "shortid": "^2.2.16",
+    "slug": "^4.0.2",
+    "sweetalert2": "^10.14.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
